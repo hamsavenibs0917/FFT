@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: hsl(0, 1%, 35%);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a:hover {
+            background-color: hsl(0, 3%, 70%);
+        }
+
+        .navbar a.active {
+            background-color: hwb(215 2% 46%);
+        }
+
+        .content {
+            padding-top: 70px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Gypsy,_Oklahoma" class="active">Home</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/About">About</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Services">Services</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Gallery">Gallery</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Welcome to Our Website</h2>
+        <p>This is a simple fixed navigation bar example.</p>
+    </div>
+
+</body>
+</html>

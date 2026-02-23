@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Image Gallery - NewMe</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            padding: 10px;
+            font-size: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>NewMe Image Gallery</h2>
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img src="./im1.jpg" alt="Image 1">
+            <div class="caption">Beautiful Landscape</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./im2.jpg" alt="Image 2">
+            <div class="caption">Mountain View</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./im3.jpg" alt="Image 3">
+            <div class="caption">City Lights</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./im4.jpg" alt="Image 4">
+            <div class="caption">Nature Beauty</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./im5.jpg" alt="Image 5">
+            <div class="caption">Sunset View</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="./im6.jpg" alt="Image 6">
+            <div class="caption">Ocean Waves</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
