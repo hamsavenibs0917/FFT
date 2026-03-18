@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Job Application Form</title>
+        <style>
+            h1{
+                text-align: center;
+             
+            }
+            form{
+                border : 1.5px solid black;
+                padding-left: 10px;
+                width: 1200px;
+                margin-top: 10px;
+                background-color: hwb(0 91% 8%);
+
+            }
+            input{
+                margin-left: 5px;
+                padding-left: 1px;
+                width: 250px;
+            }
+             select{
+                width: 200px;
+            }
+             textarea{
+                width: 200px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Job Application Form</h1>
+
+        <select>
+            <option>---select role---</option>
+            <option >Software Engineer</option>
+            <option >Data Analyst</option>
+            <option >Product Manager</option>
+            <option >UX Designer</option>
+            <option >Marketing Specialist</option>
+        </select><br><br>
+        <form>
+            <br><label >First Name:</label>
+            <input type="text" name="name"><br><br>
+
+            <label >Last Name:</label>
+            <input type="text" name="name"><br><br>
+
+            <label>Date of Birth:</label> 
+            <input type="date"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male">Male <br>
+            <input type="radio" name="gender" value="female">Female <br>
+            <input type="radio" name="gender" value="other">Other <br><br>
+
+            <label >Email:</label>
+            <input type="email" name="email"><br><br>
+
+            <label >Phone Number:</label>
+            <input type="tel" name="phone"><br><br>
+
+            <label >Profile:</label>
+            <input type="file" name="profile"><br><br>
+
+            <label >Qualifications:</label>
+            <textarea name="experience"></textarea><br><br>
+
+            <label>Skills:</label><br>
+            FFT<input type="checkbox" ><br>
+            JAVA <input type="checkbox"><br>
+            SQL <input type="checkbox"><br>
+            Python <input type="checkbox"><br>
+            DBMS<input type="checkbox"><br><br>
+
+            <label >Experience:</label>
+            <textarea name="experience"></textarea><br><br>
+
+            <label >Resume:</label>
+            <input type="file" name="resume"><br><br>
+
+            <button type="submit">Submit </button>
+        
+    </body>
+</html>

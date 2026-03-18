@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>CSS Animation</title>
+    </head>
+    <style>
+        h1{
+            text-align : center;
+        }
+        .animi{
+            background-color :#2b7b30;
+            width :300px;
+            height :300px;
+            border-radius: 10px;
+            animation-name:sample;
+            animation-duration :5s;
+            animation-iteration-count: infinite;
+            position : relative ;
+        }
+        @keyframes sample{
+            /* from{
+                background-color:black;
+            }
+            to{
+                background-color:blanchedalmond;
+            } */
+             /* 0%{
+                background-color:blueviolet;
+             }
+             10%{
+                background-color:#5858b1;
+             }
+             50%{
+                background-color:lab(35.62% 65.78 -39.93 / 0.906);
+             }
+             100%{
+                background-color:#be8022;
+             } */
+              0%{
+                background-color:blueviolet; left :0px; top :0px;
+              }
+              25%{
+                background-color:#5858b1; left :200px; top :0px;
+              }
+              50%{
+                background-color:lab(35.62% 65.78 -39.93 / 0.906); left :200px; top :200px;
+              }
+              75%{
+                background-color:#be8022; left :200px; top :0px;
+              }
+              100%{
+                background-color:blanchedalmond; left :0px; top :0px;
+              }
+        }
+    </style>
+    <body>
+        <h1>CSS Animation</h1>
+        <div class ="animi">
+
+        </div>
+    </body>
+</html>
